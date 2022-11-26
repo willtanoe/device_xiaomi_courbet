@@ -40,6 +40,7 @@ ifneq "$(wildcard $(TARGET_KERNEL_SOURCE)/prebuilt )" ""
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_PREBUILT_KERNEL := $(TARGET_KERNEL_SOURCE)/prebuilt/Image.gz
 BOARD_PREBUILT_DTBOIMAGE := $(TARGET_KERNEL_SOURCE)/prebuilt/dtbo.img
+endif
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
