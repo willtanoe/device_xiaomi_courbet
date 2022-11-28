@@ -22,7 +22,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # Cipher Ify
 CIPHER_MAINTAINER := willtanoe
-CIPHER_OFFICIAL := true
+CIPHER_OFFICIAL := false
 CIPHER_GAPPS := true
 
 # Face Unlock
