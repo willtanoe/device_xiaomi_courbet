@@ -11,17 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from courbet device
 $(call inherit-product, device/xiaomi/courbet/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit common ReloadedOS configuration
+$(call inherit-product, vendor/reloaded/config/product.mk)
 
-PRODUCT_NAME := spark_courbet
+PRODUCT_NAME := courbet
 PRODUCT_DEVICE := courbet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 11 Lite 4G
 PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-ro.spark.maintainer=willtanoe
+TARGET_BOARD_PLATFORM := sm6150
 
 # Blur
 TARGET_USES_BLUR := true
@@ -39,7 +38,6 @@ USE_PIXEL_CHARGER := false
 TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-WITH_GAPPS := true
 SELINUX_IGNORE_NEVERALLOWS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
