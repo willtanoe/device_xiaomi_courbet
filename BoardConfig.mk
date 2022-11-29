@@ -32,7 +32,6 @@ ODM_MANIFEST_COURBET_FILES := \
 
 # Kernel
 TARGET_KERNEL_CONFIG := courbet_defconfig
-TARGET_KERNEL_ARCH := arm64
 KERNEL_ARCH := arm64
 
 # Partitions
