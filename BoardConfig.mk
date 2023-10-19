@@ -21,10 +21,6 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
-DEVICE_MANIFEST_SKUS += courbet
-DEVICE_MANIFEST_COURBET_FILES := \
-    $(DEVICE_MANIFEST_FILE) \
-    $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/courbet.config
